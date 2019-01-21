@@ -36,13 +36,13 @@
         </li>
         <li>
           <p>
-            <span class="label">Year: </span> <span>{{ car.year }}</span>
+            <span class="label">Brand: </span>
+            <span>{{ car.brand | titlecase }}</span>
           </p>
         </li>
         <li>
           <p>
-            <span class="label">Brand: </span>
-            <span>{{ car.brand | titlecase }}</span>
+            <span class="label">Year: </span> <span>{{ car.year }}</span>
           </p>
         </li>
         <li>
@@ -52,6 +52,13 @@
           </p>
         </li>
       </ul>
+      <button
+        type="button"
+        class="btn btn-info"
+        [routerLink]="['/car-details/', car.id]"
+      >
+        See Details
+      </button>
     </div>
   </div>
 </div>

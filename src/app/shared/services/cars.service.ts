@@ -15,8 +15,10 @@ export class CarsService {
     return of(CARS);
   }
 
-  getCardDetails(carId): Observable<Car[]> {
-    return of(CARS.filter(car => car.id === carId));
+  getCardDetails(carId) {
+    let carDetails = {};
+    carDetails = CARS.filter(car => car.id === carId);
+    return carDetails;
   }
 
   getCarsByBrand(carBrand): Observable<Car[]> {
