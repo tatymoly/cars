@@ -43,7 +43,7 @@ export const CARS: Car[] = [
   {
     id: '4',
     picture:
-      'http://autoreport.com.co/media/djcatalog2/images/item/1/chevrolet-spark-gt-lt-a-a_f.jpg',
+      'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_dd6423e2d44847cba129824f1649acfc.jpg',
     title: 'Chevrolet Spark LT',
     description:
       // tslint:disable-next-line:max-line-length
