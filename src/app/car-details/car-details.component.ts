@@ -18,13 +18,11 @@ export class CarDetailsComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.carId = params['id'];
-      console.log(this.carId);
     });
     this.getCarDetails(this.carId);
   }
 
   getCarDetails(carId) {
     this.car = this.carService.getCardDetails(carId)[0];
-    console.log(this.car);
   }
 }

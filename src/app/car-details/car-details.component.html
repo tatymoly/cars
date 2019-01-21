@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="back--button">
+    <button type="button" class="btn btn-info" routerLink="">Return</button>
+  </div>
   <div class="row justify-content-center">
     <div class="car--container col col-12">
       <h2 class="model">{{ car.title }}</h2>
@@ -6,12 +9,12 @@
       <ul class="car--detail">
         <li>
           <p>
-            <span class="label">Model: </span> <span>{{ car.model }}</span>
+            <span class="label">Brand: </span> <span>{{ car.brand }}</span>
           </p>
         </li>
         <li>
           <p>
-            <span class="label">Brand: </span> <span>{{ car.brand }}</span>
+            <span class="label">Model: </span> <span>{{ car.model }}</span>
           </p>
         </li>
         <li>

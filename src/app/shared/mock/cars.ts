@@ -10,8 +10,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'The driving aid technologies offered by the Renault Clio make your manoeuvres easier. You benefit from enhanced safety for a more comfortable drive.',
     model: 'Clio',
-    year: '2018',
     brand: 'renault',
+    year: '2018',
     price: '13615',
   },
   {
@@ -23,8 +23,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'The Dacia Sandero is a subcompact car produced jointly by the French manufacturer Renault and its Romanian subsidiary Dacia since 2007, currently at its second generation.',
     model: 'Sandero',
-    year: '2018',
     brand: 'renault',
+    year: '2018',
     price: '6995',
   },
   {
@@ -36,8 +36,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'Fully expressing the award-winning KODO: Soul of Motion design language, Mazda3 Hatchbacks revamped exterior design conveys power, beauty and dynamic motion in every detail.',
     model: '3 Hatchback',
-    year: '2018',
     brand: 'mazda',
+    year: '2018',
     price: '20595',
   },
   {
@@ -49,8 +49,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'The Chevrolet Spark LT is a city car produced by GM Korea, originally marketed prominently as the Daewoo Matiz. It has been available solely as a five-door hatchback.',
     model: 'Spark LT',
-    year: '2014',
     brand: 'chevrolet',
+    year: '2014',
     price: '4490',
   },
   {
@@ -63,8 +63,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'The Chevrolet Aveo is a subcompact car manufactured since 2002 (by Daewoo from 2002-11), marketed worldwide in 120 countries under seven brands (Chevrolet, Daewoo, Holden, Pontiac, Ravon, and Suzuki)',
     model: 'Aveo',
-    year: '2013',
     brand: 'chevrolet',
+    year: '2013',
     price: '4495',
   },
   {
@@ -77,8 +77,8 @@ export const CARS: Car[] = [
       // tslint:disable-next-line:max-line-length
       'The Ford Fiesta is a supermini marketed by Ford since 1976 over seven generations and manufactured globally, including in Europe, Brazil, Argentina, Mexico, China, India, Thailand, and South Africa.',
     model: 'Fiesta',
-    year: '2019',
     brand: 'ford',
+    year: '2019',
     price: '13965',
   },
 ];

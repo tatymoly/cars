@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-  FormControl,
-} from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Car } from '../shared/models/cars';
 import { CarsService } from '../shared/services/cars.service';
 
