@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="back--button">
+    <button type="button" class="btn btn-info" routerLink="">Return</button>
+  </div>
+  <div class="row justify-content-md-center">
+    <div
+      class="car--container col col-12 col-md-6 col-lg-4"
+      *ngFor="let car of carList"
+    >
+      <h2 class="model">{{ car.title }}</h2>
+      <div class="car--img"><img [src]="car.picture" alt="" /></div>
+      <ul class="car--detail">
+        <li>
+          <p>
+            <span class="label">Brand: </span>
+            <span>{{ car.brand | titlecase }}</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="label">Model: </span> <span>{{ car.model }}</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="label">Year: </span> <span>{{ car.year }}</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="label">Price: </span>
+            <span>{{ car.price | currency: 'EUR':true }}</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="label">Description: </span>
+            <span>{{ car.description }}</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

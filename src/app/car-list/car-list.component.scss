@@ -16,4 +16,10 @@
       cursor: pointer;
     }
   }
+  .car--checkbox {
+    .form-check-input {
+      transform: scale(1.5);
+      margin-top: 0.5em;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Car } from '../shared/models/cars';
 import { CarsService } from '../shared/services/cars.service';
 
@@ -12,8 +13,14 @@ export class CarListComponent implements OnInit {
   cars: Car[];
   searchForm: FormGroup;
   carBrand = '';
+  comparationList = [];
+  isDisabled: Boolean = false;
 
-  constructor(private carService: CarsService, private fb: FormBuilder) {}
+  constructor(
+    private carService: CarsService,
+    private fb: FormBuilder,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.createSeachForm();
@@ -41,6 +48,19 @@ export class CarListComponent implements OnInit {
     this.carService.getCarsByBrand(this.carBrand).subscribe(res => {
       this.cars = res;
     });
+  }
+  createComparationList(car): void {
+    const position = this.comparationList.indexOf(car);
+    if (position > -1) {
+      this.comparationList.splice(position, 1);
+    } else {
+      this.comparationList.push(car);
+    }
+    console.log(this.comparationList);
+  }
+  setList() {
+    sessionStorage.setItem('compare', JSON.stringify(this.comparationList));
+    this.router.navigate(['car-compare']);
   }
   createSeachForm() {
     this.searchForm = this.fb.group({
