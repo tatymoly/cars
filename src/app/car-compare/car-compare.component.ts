@@ -17,6 +17,5 @@ export class CarCompareComponent implements OnInit {
   getCompareList() {
     const data = sessionStorage.getItem('compare');
     this.carList = JSON.parse(data);
-    console.log(this.carList);
   }
 }

@@ -56,7 +56,6 @@ export class CarListComponent implements OnInit {
     } else {
       this.comparationList.push(car);
     }
-    console.log(this.comparationList);
   }
   setList() {
     sessionStorage.setItem('compare', JSON.stringify(this.comparationList));
